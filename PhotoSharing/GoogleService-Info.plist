@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAWWiA1kRSmOKHzQxYPENEQFljRKOfYm7Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>21058935504</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jimmyliu.PhotoSharing</string>
+	<key>PROJECT_ID</key>
+	<string>testground-8f4c9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>testground-8f4c9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>New item</key>
+	<string></string>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:21058935504:ios:b0532c2ee39dbbc2cf1cd5</string>
+</dict>
+</plist>
