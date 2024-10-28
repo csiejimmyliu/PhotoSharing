@@ -11,7 +11,6 @@ import SwiftUI
 @main
 struct PhotoActivityBundle: WidgetBundle {
     var body: some Widget {
-        PhotoActivity()
         PhotoActivityLiveActivity()
     }
 }

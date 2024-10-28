@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -65,42 +65,31 @@
 		0B9FDB4E2CCF613400E29825 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0B9FDB502CCF613400E29825 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		0B9FDB722CCF625300E29825 /* PhotoActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9FDBB52CCF686100E29825 /* PhotoActivityExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoActivityExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0B9FDB812CCF625400E29825 /* Exceptions for "PhotoActivity" folder in "PhotoActivityExtension" target */ = {
+		0B9FDB812CCF625400E29825 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 0B9FDB712CCF625300E29825 /* PhotoActivityExtension */;
 		};
+		0B9FDBB72CCF6A3300E29825 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0B9FDAE42CCF5FFF00E29825 /* PhotoSharing */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0B9FDAE72CCF5FFF00E29825 /* PhotoSharing */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PhotoSharing;
-			sourceTree = "<group>";
-		};
-		0B9FDAFB2CCF600000E29825 /* PhotoSharingTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PhotoSharingTests;
-			sourceTree = "<group>";
-		};
-		0B9FDB052CCF600100E29825 /* PhotoSharingUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PhotoSharingUITests;
-			sourceTree = "<group>";
-		};
-		0B9FDB752CCF625300E29825 /* PhotoActivity */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0B9FDB812CCF625400E29825 /* Exceptions for "PhotoActivity" folder in "PhotoActivityExtension" target */,
-			);
-			path = PhotoActivity;
-			sourceTree = "<group>";
-		};
+		0B9FDAE72CCF5FFF00E29825 /* PhotoSharing */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (0B9FDBB72CCF6A3300E29825 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = PhotoSharing; sourceTree = "<group>"; };
+		0B9FDAFB2CCF600000E29825 /* PhotoSharingTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PhotoSharingTests; sourceTree = "<group>"; };
+		0B9FDB052CCF600100E29825 /* PhotoSharingUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PhotoSharingUITests; sourceTree = "<group>"; };
+		0B9FDB752CCF625300E29825 /* PhotoActivity */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (0B9FDB812CCF625400E29825 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = PhotoActivity; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +139,7 @@
 		0B9FDADC2CCF5FFF00E29825 = {
 			isa = PBXGroup;
 			children = (
+				0B9FDBB52CCF686100E29825 /* PhotoActivityExtension.entitlements */,
 				0B9FDAE72CCF5FFF00E29825 /* PhotoSharing */,
 				0B9FDAFB2CCF600000E29825 /* PhotoSharingTests */,
 				0B9FDB052CCF600100E29825 /* PhotoSharingUITests */,
@@ -311,6 +301,7 @@
 				};
 			};
 			buildConfigurationList = 0B9FDAE02CCF5FFF00E29825 /* Build configuration list for PBXProject "PhotoSharing" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -322,7 +313,6 @@
 			packageReferences = (
 				0B9FDB172CCF60D800E29825 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 0B9FDAE62CCF5FFF00E29825 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -543,6 +533,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoSharing/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -583,6 +576,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoSharing/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -705,6 +701,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PhotoActivityExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62QTRFNKCW;
@@ -738,6 +735,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PhotoActivityExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62QTRFNKCW;
